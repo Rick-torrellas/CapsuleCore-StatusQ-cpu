@@ -1,0 +1,12 @@
+name: CD Pipeline
+
+on:
+  push:
+    branches: [main]
+    tags:
+      - 'v*' # Detecta versiones como v1.0.0
+
+jobs:
+  # Llamada al módulo de publicación (solo si hay un tag)
+  publish:
+    uses: ./.github/workflows/pip-publish.yml

@@ -1,0 +1,28 @@
+name: Tests  # Workflow name displayed in GitHub Actions UI
+
+# Workflow triggers - defines when this automated pipeline should execute
+on:
+  workflow_call:
+
+jobs:
+  pytest:  # Job identifier - runs pytest test suite
+    runs-on: ubuntu-latest  # Execute on latest Ubuntu virtual environment
+    
+    steps:
+      # Step 1: Check out repository code
+      - uses: actions/checkout@v4  # Official action to clone repository
+        # v4 fetches the code so subsequent steps can access it
+      
+      # Step 2: Configure uv package manager
+      - uses: astral-sh/setup-uv@v5  # Third-party action for uv setup
+        with:
+          enable-cache: true  # Cache uv dependencies between runs for faster execution
+      
+      # Step 3: Install Python using uv's Python management
+      - name: Install Python
+        run: uv python install  # Installs the Python version specified in .python-version
+      
+      # Step 4: Execute test suite
+      - name: Run Tests
+        run: uv run pytest  # Runs pytest in uv-managed virtual environment
+        # uv automatically handles dependency resolution and environment activation

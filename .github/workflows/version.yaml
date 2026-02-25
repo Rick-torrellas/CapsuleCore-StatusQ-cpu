@@ -1,0 +1,32 @@
+name: Update Version Badge
+
+on:
+  workflow_call: # Permite que ci.yml lo llame
+
+jobs:
+  update-badge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Crucial para que pueda hacer push a la rama 'badges'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract Version from pyproject.toml
+        id: get_version
+        run: |
+          # El clásico grep de Arch para no fallar
+          VERSION=$(grep -m 1 "version" pyproject.toml | tr -d '"' | tr -d "'" | cut -d'=' -f2 | xargs)
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+
+      - name: Create Badge JSON
+        run: |
+          echo "{\"schemaVersion\": 1, \"label\": \"version\", \"message\": \"v${{ env.VERSION }}\", \"color\": \"blue\"}" > version.json
+
+      - name: Deploy to Badges Branch
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: badges
+          destination_dir: ./
+          keep_files: false # Sobrescribe para mantener solo el último JSON

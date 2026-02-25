@@ -1,0 +1,23 @@
+name: Pip Publish Module
+
+on:
+  workflow_call: # Esto permite que sea llamado por otro archivo
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write # Requerido para Trusted Publishing (OIDC)
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Build and Publish
+        run: |
+          uv build
+          uv publish
