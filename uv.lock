@@ -1,0 +1,22 @@
+version = 1
+revision = 3
+requires-python = ">=3.14"
+
+[[package]]
+name = "core-cpu-monitor"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "core-log-engine" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "core-log-engine", specifier = ">=0.2.1" }]
+
+[[package]]
+name = "core-log-engine"
+version = "0.2.1"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/25/5b/d164a81c0014826c79588120bd6adbf8df6fc5988fb7bd130eb10c5ddc7a/core_log_engine-0.2.1-py3-none-any.whl", hash = "sha256:945b789aa91cd83ae63ac47b326f24dffe0b0c3a50d4b5a2fcb3e0c81b1607e0", size = 3972, upload-time = "2026-02-25T13:59:25.315Z" },
+]

@@ -5,7 +5,7 @@ from typing import List, Optional
 
 import psutil
 
-from src.ports import Logger
+from core_log_engine import Logger
 
 # --- Data Schemas ---
 
