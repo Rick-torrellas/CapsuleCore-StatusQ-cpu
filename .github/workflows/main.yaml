@@ -12,6 +12,8 @@ on:
 jobs:
   # 2. Ejecutar Linting
   CI:
+    permissions:
+      contents: write
     uses: ./.github/workflows/ci.yaml
   # 1. Ejecutar Formateo
   CD:
