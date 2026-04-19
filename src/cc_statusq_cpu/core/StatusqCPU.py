@@ -1,8 +1,8 @@
 import time
 from typing import Optional
 
+from .CPUEvent import DataReceivedEvent, MonitoringErrorEvent, MonitoringFinishedEvent, MonitoringStartedEvent
 from .CPUEventBus import CPUEventBus
-from .CPUEvents import DataReceivedEvent, MonitoringErrorEvent, MonitoringFinishedEvent, MonitoringStartedEvent
 from .CPUProvider import CPUProvider
 from .CPUStatus import CPUStatus
 

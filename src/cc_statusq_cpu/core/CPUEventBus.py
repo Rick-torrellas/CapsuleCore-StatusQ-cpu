@@ -1,6 +1,6 @@
 from typing import Callable, Dict, List, Type, TypeVar
 
-from .CPUEvents import CPUEvent
+from .CPUEvent import CPUEvent
 
 T = TypeVar("T", bound=CPUEvent)
 

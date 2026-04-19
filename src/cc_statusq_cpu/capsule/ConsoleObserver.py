@@ -1,5 +1,4 @@
-from ..core.CPUObserver import CPUObserver
-from ..core.CPUStatus import CPUStatus
+from ..core import CPUObserver, CPUStatus
 
 
 class ConsoleObserver(CPUObserver):
