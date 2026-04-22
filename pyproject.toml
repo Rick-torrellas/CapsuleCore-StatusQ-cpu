@@ -11,17 +11,3 @@ dependencies = [
     "pytest>=9.0.2",
     "ruff>=0.15.2",
 ]
-[tool.ruff]
-# Longitud máxima de línea (estándar es 88 o 100)
-line-length = 130
-
-[tool.ruff.lint]
-# Selecciona las reglas a aplicar
-# E: pycodestyle, F: Pyflakes, I: isort (orden de imports)
-select = ["E", "F", "I"]
-# Ignora reglas específicas si te resultan molestas
-ignore = []
-
-[tool.ruff.format]
-# Ruff también puede formatear tu código automáticamente
-quote-style = "double"

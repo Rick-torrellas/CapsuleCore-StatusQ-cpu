@@ -12,14 +12,6 @@ jobs:
       contents: read    # Necesario para checkout
       id-token: write   # Requerido para autenticación OIDC (PyPI/Trusted Publishers)
     uses: ./.github/workflows/pip-publish.yaml
-  
-  publish-github-packages:
-    if: startsWith(github.ref, 'refs/tags/')
-    uses: ./.github/workflows/githubPackage.yaml
-    secrets: inherit
-    permissions:
-      contents: read
-      packages: write # Vital para poder subir el paquete
 
   deploy-gitub-pages:
     # Si Pages depende de que el paquete se publique primero, 
