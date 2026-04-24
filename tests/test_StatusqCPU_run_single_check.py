@@ -1,4 +1,4 @@
-from cc_statusq_cpu.core import (
+from cc.statusq.cpu.core import (
     DataReceivedEvent,
     MonitoringErrorEvent,
     MonitoringFinishedEvent,
@@ -16,7 +16,7 @@ def test_run_single_check_success(mock_provider, event_bus, mock_cpu_status):
     received_events = []
     
     # We subscribe to the base CPUEvent to catch everything published
-    from cc_statusq_cpu.core import CPUEvent
+    from cc.statusq.cpu.core import CPUEvent
     event_bus.subscribe(CPUEvent, lambda e: received_events.append(e))
     
     # 2. Execute
@@ -47,7 +47,7 @@ def test_run_single_check_failure(mock_provider, event_bus):
     mock_provider.capture_once.side_effect = Exception("Hardware failure")
     
     received_events = []
-    from cc_statusq_cpu.core import CPUEvent
+    from cc.statusq.cpu.core import CPUEvent
     event_bus.subscribe(CPUEvent, lambda e: received_events.append(e))
     
     # 2. Execute

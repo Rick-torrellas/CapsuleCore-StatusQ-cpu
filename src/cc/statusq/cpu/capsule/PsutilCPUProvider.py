@@ -4,8 +4,7 @@ from datetime import datetime
 from typing import List, Optional
 
 import psutil
-
-from ..core.CPUStatus import CPUStatus
+from cc.statusq.core.schema import CPUStatus
 
 
 class PsutilCPUProvider:

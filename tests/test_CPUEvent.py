@@ -2,7 +2,7 @@ from datetime import datetime
 
 import pytest
 
-from cc_statusq_cpu.core import (
+from cc.statusq.cpu.core import (
     CPUEvent,
     CPUStatus,
     DataReceivedEvent,

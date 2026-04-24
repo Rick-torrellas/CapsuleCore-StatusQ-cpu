@@ -3,7 +3,7 @@ from unittest.mock import MagicMock
 import pytest
 
 # Importing core components
-from cc_statusq_cpu.core import CPUEventBus, CPUStatus, DataReceivedEvent, MonitoringFinishedEvent, MonitoringStartedEvent
+from cc.statusq.cpu.core import CPUEventBus, CPUStatus, DataReceivedEvent, MonitoringFinishedEvent, MonitoringStartedEvent
 
 
 class TestCPUEventBus:

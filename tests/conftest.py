@@ -4,7 +4,7 @@ from unittest.mock import MagicMock
 import pytest
 
 # Importing core components from the statusq-cpu project
-from cc_statusq_cpu.core import CPUEventBus, CPUProvider, CPUStatus
+from cc.statusq.cpu.core import CPUEventBus, CPUProvider, CPUStatus
 
 
 @pytest.fixture

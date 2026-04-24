@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Optional
 
-from .CPUStatus import CPUStatus
+from cc.statusq.core.schema import CPUStatus
 
 
 @dataclass(frozen=True, kw_only=True)

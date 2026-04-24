@@ -1,10 +1,11 @@
 import time
 from typing import Optional
 
+from cc.statusq.core.base import CPUProvider
+from cc.statusq.core.schema import CPUStatus
+
 from .CPUEvent import DataReceivedEvent, MonitoringErrorEvent, MonitoringFinishedEvent, MonitoringStartedEvent
 from .CPUEventBus import CPUEventBus
-from .CPUProvider import CPUProvider
-from .CPUStatus import CPUStatus
 
 
 class StatusqCPU:

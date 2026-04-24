@@ -1,7 +1,7 @@
 from unittest.mock import MagicMock
 
-from cc_statusq_cpu.capsule.ConsoleSubscriber import ConsoleSubscriber
-from cc_statusq_cpu.core import DataReceivedEvent, MonitoringStartedEvent
+from cc.statusq.cpu.capsule.ConsoleSubscriber import ConsoleSubscriber
+from cc.statusq.cpu.core import DataReceivedEvent, MonitoringStartedEvent
 
 
 def test_subscriber_registration(event_bus):
@@ -52,7 +52,7 @@ def test_subscriber_ignores_unrelated_events(event_bus, capsys):
     """
     Ensures no output for unsubscribed events.
     """
-    from cc_statusq_cpu.core import MonitoringFinishedEvent
+    from cc.statusq.cpu.core import MonitoringFinishedEvent
     
     subscriber = ConsoleSubscriber()
     subscriber.subscribe_to(event_bus)

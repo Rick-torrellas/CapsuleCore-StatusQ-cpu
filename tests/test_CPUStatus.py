@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from cc_statusq_cpu.core import CPUStatus
+from cc.statusq.cpu.core import CPUStatus
 
 """
 Tests for the CPUStatus Data Transfer Object (DTO).

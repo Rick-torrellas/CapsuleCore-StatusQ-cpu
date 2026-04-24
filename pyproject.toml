@@ -1,13 +1,17 @@
 [project]
-name = "cc.statusq-cpu"
-version = "0.8.1"
+name = "cc.statusq.cpu"
+version = "0.10.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "cc-statusq-core>=0.1.0",
     "core-log-engine>=0.2.2",
     "gitchangelog>=3.0.4",
     "psutil>=7.2.2",
     "pytest>=9.0.2",
     "ruff>=0.15.2",
 ]
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["cc.statusq.*"]

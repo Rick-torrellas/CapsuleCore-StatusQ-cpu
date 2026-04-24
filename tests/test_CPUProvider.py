@@ -2,8 +2,8 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from cc_statusq_cpu.capsule import PsutilCPUProvider
-from cc_statusq_cpu.core import CPUStatus
+from cc.statusq.cpu.capsule import PsutilCPUProvider
+from cc.statusq.cpu.core import CPUStatus
 
 
 class TestPsutilCPUProvider:

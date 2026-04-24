@@ -1,6 +1,6 @@
 import pytest
 
-from cc_statusq_cpu.core import CPUEventBus, CPUEventSubscriber, DataReceivedEvent, MonitoringStartedEvent
+from cc.statusq.cpu.core import CPUEventBus, CPUEventSubscriber, DataReceivedEvent, MonitoringStartedEvent
 
 
 # 1. Create a concrete implementation of the ABC for testing purposes

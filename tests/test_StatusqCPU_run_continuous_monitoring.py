@@ -1,6 +1,6 @@
 from unittest.mock import patch
 
-from cc_statusq_cpu.core import (
+from cc.statusq.cpu.core import (
     DataReceivedEvent,
     MonitoringErrorEvent,
     MonitoringFinishedEvent,
@@ -18,7 +18,7 @@ def test_run_continuous_monitoring_flow(mock_provider, event_bus, tracker_logs):
     tracker = StatusqCPU(provider=mock_provider, event_bus=event_bus)
     
     # Subscribe the tracker_logs list to all CPUEvent types
-    from cc_statusq_cpu.core import CPUEvent
+    from cc.statusq.cpu.core import CPUEvent
     event_bus.subscribe(CPUEvent, lambda e: tracker_logs.append(e))
 
     # Run for exactly 2 iterations with 0 delay for speed

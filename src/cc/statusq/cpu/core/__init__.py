@@ -6,9 +6,14 @@ from .CPUStatus import CPUStatus
 from .StatusqCPU import StatusqCPU
 
 __all__ = [
-    "CPUProvider", 
-    "CPUStatus", 
-    "StatusqCPU", 
-    "CPUEventBus", "CPUEvent", "MonitoringStartedEvent", "DataReceivedEvent", "MonitoringErrorEvent", "MonitoringFinishedEvent",
-    "CPUEventSubscriber"
+    "CPUEvent",
+    "DataReceivedEvent",
+    "MonitoringErrorEvent",
+    "MonitoringFinishedEvent",
+    "MonitoringStartedEvent",
+    "CPUEventBus",
+    "CPUEventSubscriber",
+    "CPUProvider",
+    "CPUStatus",
+    "StatusqCPU"
 ]
