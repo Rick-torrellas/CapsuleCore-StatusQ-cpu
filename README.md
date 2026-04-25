@@ -1,14 +1,14 @@
-# cc.StatusQ-cpu
+# cc.statusq.cpu
 
 > Efficient monitoring and management of CPU status.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![Version](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Rick-torrellas/cc.StatusQ-cpu/badges/version.json)
-[![CI CD](https://github.com/Rick-torrellas/cc.StatusQ-cpu/actions/workflows/main.yaml/badge.svg)](https://github.com/Rick-torrellas/cc.StatusQ-cpu/actions/workflows/main.yaml)
+![Version](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/Rick-torrellas/cc.statusq.cpu/badges/version.json)
+[![CI CD](https://github.com/Rick-torrellas/cc.statusq.cpu/actions/workflows/main.yaml/badge.svg)](https://github.com/Rick-torrellas/cc.statusq.cpu/actions/workflows/main.yaml)
 [![Python Version](https://img.shields.io/badge/python-3.11+-blue?logo=python&logoColor=white)](https://www.python.org/)
-[![Download](https://img.shields.io/github/v/release/Rick-torrellas/cc.StatusQ-cpu?label=Download&color=orange)](https://github.com/Rick-torrellas/cc.StatusQ-cpu/releases)
+[![Download](https://img.shields.io/github/v/release/Rick-torrellas/cc.statusq.cpu?label=Download&color=orange)](https://github.com/Rick-torrellas/cc.statusq.cpu/releases)
 [![docs](https://img.shields.io/badge/docs-read_now-blue?style=flat-square)](https://rick-torrellas.github.io/cc-book-kit/)
-[![Ask DeepWiki](https://img.shields.io/badge/DeepWiki-Documentation-blue?logo=gitbook&logoColor=white)](https://deepwiki.com/Rick-torrellas/cc.StatusQ-cpu)
+[![Ask DeepWiki](https://img.shields.io/badge/DeepWiki-Documentation-blue?logo=gitbook&logoColor=white)](https://deepwiki.com/Rick-torrellas/cc.statusq.cpu)
 
 💊⚛️
 
@@ -17,7 +17,7 @@
 ## Installation
 
 ```bash
-pip install cc.statusq-cpu
+pip install cc.statusq.cpu
 ```
 
 ---

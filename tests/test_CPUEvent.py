@@ -1,10 +1,10 @@
 from datetime import datetime
 
 import pytest
+from cc.statusq.core.schema import CPUStatus
 
 from cc.statusq.cpu.core import (
     CPUEvent,
-    CPUStatus,
     DataReceivedEvent,
     MonitoringErrorEvent,
     MonitoringFinishedEvent,

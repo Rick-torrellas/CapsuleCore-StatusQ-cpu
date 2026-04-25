@@ -4,16 +4,16 @@ requires-python = ">=3.11"
 
 [[package]]
 name = "cc-statusq-core"
-version = "0.1.0"
+version = "0.1.2"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/ba/ab/44aed1fa85b5ed47c64b91e45e2a60df2c75e9abcb35419f8ab8eff5c7dd/cc_statusq_core-0.1.0.tar.gz", hash = "sha256:bc409fd7a33330e4ea47d4ad4e3789ebf881c57a6855c483e7c8585ea7c17ffa", size = 6973, upload-time = "2026-04-24T20:52:08.159Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/68/bd/261a32221971a1532b82de3d69c36d396270d724474f5e557de302d06622/cc_statusq_core-0.1.2.tar.gz", hash = "sha256:b89d1ec6181ed5b40adff23c652d98fc203a7526e5ef3d2843115012101cb0d2", size = 7005, upload-time = "2026-04-25T08:30:18.621Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/16/49/88a85e40169fdb2dfaa3d124e0457da64dbbc134256ec2684f9e5e8e075f/cc_statusq_core-0.1.0-py3-none-any.whl", hash = "sha256:b6530ae15f92857c82b9a0e3736e4b37edb098aa00dd449fe4640dd3d0098b4c", size = 8056, upload-time = "2026-04-24T20:52:09.294Z" },
+    { url = "https://files.pythonhosted.org/packages/1a/f9/aa06c71725e1f7f570e71da5ef3d50b92526af91e15e885fc9016ae54a4f/cc_statusq_core-0.1.2-py3-none-any.whl", hash = "sha256:bfaf53f5a3da1ed48d036ca08c5c5466aace9329081f867bc48fdd1715ff4057", size = 8059, upload-time = "2026-04-25T08:30:19.681Z" },
 ]
 
 [[package]]
 name = "cc-statusq-cpu"
-version = "0.9.0"
+version = "0.10.0"
 source = { virtual = "." }
 dependencies = [
     { name = "cc-statusq-core" },
@@ -26,7 +26,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "cc-statusq-core", specifier = ">=0.1.0" },
+    { name = "cc-statusq-core", specifier = "==0.1.2" },
     { name = "core-log-engine", specifier = ">=0.2.2" },
     { name = "gitchangelog", specifier = ">=3.0.4" },
     { name = "psutil", specifier = ">=7.2.2" },

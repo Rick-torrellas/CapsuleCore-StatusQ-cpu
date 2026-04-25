@@ -2,10 +2,10 @@ from datetime import datetime
 from unittest.mock import MagicMock, patch
 
 import pytest
+from cc.statusq.core.schema import CPUStatus
 
 # Importing the provider and the DTO
 from cc.statusq.cpu.capsule import PsutilCPUProvider
-from cc.statusq.cpu.core import CPUStatus
 
 
 class TestPsutilCPUProvider:

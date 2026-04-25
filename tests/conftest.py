@@ -2,9 +2,11 @@ from datetime import datetime
 from unittest.mock import MagicMock
 
 import pytest
+from cc.statusq.core.base import CPUProvider
+from cc.statusq.core.schema import CPUStatus
 
 # Importing core components from the statusq-cpu project
-from cc.statusq.cpu.core import CPUEventBus, CPUProvider, CPUStatus
+from cc.statusq.cpu.core import CPUEventBus
 
 
 @pytest.fixture
